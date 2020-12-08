@@ -41,9 +41,9 @@ def scrape():
 # HTML object
     html = browser.html
 # Parse HTML with Beautiful Soup
-    soup = BeautifulSoup(html, 'html.parser') 
     featured_image_url=soup.find("figure", class_="lede").a["href"]
-    featured_image_url 
+    feature_img = url + featured_image_url
+    feature_img    
 
 ### Mars Facts
     url = 'https://space-facts.com/mars/'
